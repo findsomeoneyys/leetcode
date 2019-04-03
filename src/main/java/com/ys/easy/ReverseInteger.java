@@ -1,5 +1,6 @@
 package com.ys.easy;
 
+
 public class ReverseInteger {
 
     public int reverse(int x) {
@@ -8,8 +9,8 @@ public class ReverseInteger {
             r = r * 10 + x % 10;
             x /= 10;
         }
-        if (r >= Integer.MIN_VALUE && r<= Integer.MAX_VALUE) {
-            return (int)r;
+        if (r >= Integer.MIN_VALUE && r <= Integer.MAX_VALUE) {
+            return (int) r;
         } else {
             return 0;
         }
@@ -35,9 +36,9 @@ public class ReverseInteger {
 
         int result = 0;
         int maxdiff = Integer.MAX_VALUE / 10;
-        for (char c:chars) {
+        for (char c : chars) {
             if (result > maxdiff || x == Integer.MIN_VALUE) return 0;
-            result = result*10 + Character.getNumericValue(c);
+            result = result * 10 + Character.getNumericValue(c);
         }
         return isNegative ? -result : result;
 
