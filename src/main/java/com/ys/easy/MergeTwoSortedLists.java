@@ -9,8 +9,8 @@ package com.ys.easy;
  * Output: 1->1->2->3->4->4
  */
 
-class MergeTwoSortedLists {
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+public class MergeTwoSortedLists {
+    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if(l1 == null) return l2;
         if(l2 == null) return l1;
         if(l1.val < l2.val){
